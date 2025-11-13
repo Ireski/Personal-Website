@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iredia's Portfolio Website</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-black">
+    <div id="all" class="relative">
+      <!-- Header -->
+      <header class="flex items-center justify-center">
+        <img src="images/ireskilogo.png" alt="My logo" class="h-[150px]" />
+      </header>
+      <!-- Laptop Navbar -->
+      <div
+        class="fixed top-[1%] left-[1%] lg:top-[20%] lg:left-[86%] text-white z-[800] lg:flex flex-row lg:flex-col gap-[1px] lg:gap-[20px] hidden main-back"
+      >
+        <div
+          class="absolute top-[50%] translate-y-[-50%] right-[-4%] h-[120%] w-[35%] bg-[#252525a9] rounded-[30px] inside-back"
+        ></div>
+        <a class="inside active" href="#home">
+          <i id="nav-icon" class="fa-solid fa-house"></i>
+        </a>
+        <a class="inside" href="#about">
+          <i id="nav-icon" class="fa-solid fa-user"></i>
+        </a>
+        <a class="inside" href="#skills">
+          <i id="nav-icon" class="fas fa-tools"></i>
+        </a>
+        <a class="inside" href="#expo">
+          <i id="nav-icon" class="fa-solid fa-clock"></i>
+        </a>
+        <a class="inside" href="#portfolio">
+          <i id="nav-icon" class="fa-solid fa-briefcase"></i>
+        </a>
+        <a class="inside" href="#contact">
+          <i id="nav-icon" class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <!-- Mobile Navbar -->
+      <div
+        class="fixed bottom-0 bg-black h-[50px] left-0 right-0 z-[300] flex items-center justify-between lg:hidden"
+      >
+        <a
+          href="#home"
+          class="bg-gray-500 text-white rounded-[2px] h-[100%] w-[80px] flex items-center justify-center inside2 active"
+        >
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a
+          href="#about"
+          class="bg-gray-500 text-white rounded-[3px] h-[100%] w-[80px] flex items-center justify-center inside2"
+        >
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <a
+          href="#portfolio"
+          class="bg-gray-500 text-white rounded-[3px] h-[100%] w-[80px] flex items-center justify-center inside2"
+        >
+          <i class="fa-solid fa-briefcase"></i>
+        </a>
+        <a
+          href="#contact"
+          class="bg-gray-500 text-white rounded-[3px] h-[100%] w-[80px] flex items-center justify-center inside2"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="relative px-[20px] lg:px-[100px] h-[auto] mt-[-175px] lg:mt-[-150px] pt-[20px] overflow-hidden text-white pb-[200px]"
+      >
+        <div class="hidden lg:block" id="yellow"></div>
+        <div id="black" class="hidden lg:block"></div>
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-2 relative top-[150px] lg:top-[200px]"
+        >
+          <div class="w-[100%] lg:w-[40%]">
+            <img
+              src="images/iredia.png"
+              alt=""
+              class="relative z-20 h-[400px] lg:h-[550px] w-[400px] lg:w-[450px] rounded-bl-[395px] rounded-[15px] lg:rounded-[15px] lg:shadow-sm lg:shadow-gray-200 left-[50%] translate-x-[-50%] lg:left-[0%] lg:translate-x-[0%] mt-[40px]"
+            />
+          </div>
+          <div
+            class="w-[100%] lg:w-[60%] mt-[50px] lg:mt-[0px] relative lg:top-[90px]"
+          >
+            <div class="flex items-start">
+              <img
+                src="images/yellowdash.png"
+                alt=""
+                id="line"
+                class="relative top-[40px] hidden lg:block"
+              />
+              <div class="text-left lg:text-left mt-[45px] lg:mt-0">
+                <h1
+                  class="text-[45px] lg:text-[55px] w-[70%] lg:w-[100%] font-[600] text-[#ffb400] mb-[-220px] lg:mb-[-15px] relative top-[-220px] lg:top-[0px] left-[10px] lg:left-0"
+                >
+                  I'M <br class="block lg:hidden" />IREDIA
+                  <br class="block lg:hidden" />ERHABOR
+                </h1>
+                <h2
+                  class="font-[600] text-[32px] lg:text-[45px] h-[60px]"
+                  id="typewriter"
+                ></h2>
+                <p
+                  class="text-[15px] lg:text-[20px] leading-[34px] mt-[10px] w-[100%] lg:w-[85%]"
+                >
+                  I’m a Nigerian-based Web Designer and Front-End Developer
+                  dedicated to creating visually stunning and user-friendly
+                  digital experiences. I’m passionate about turning ideas into
+                  elegant, responsive designs that make a real impact.
+                </p>
+                <div class="w-[230px]">
+                  <a href="#about">
+                    <button
+                      id="aboutbtn"
+                      class="relative flex items-center gap-2 h-[50px] mt-[30px] border-[1px] border-[#ffb400] px-[15px] rounded-[30px] overflow-hidden cursor-pointer font-[600] left-[50%] translate-x-[-50%] lg:left-[0%] lg:translate-x-[0%]"
+                    >
+                      MORE ABOUT ME
+                      <div
+                        class="bg-[#ffb400] h-[100%] w-[50px] flex items-center justify-center rounded-[50%] relative left-[15px]"
+                      >
+                        <i class="fa-solid fa-arrow-down"></i>
+                      </div>
+                      <div
+                        id="btnback"
+                        class="absolute top-0 right-0 h-[100%] w-[0%] bg-[#ffb400] z-[-10] transition-all duration-700 ease-in-out"
+                      ></div>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="h-[auto] bg-black flex flex-col items-center">
+        <div class="mt-[70px]">
+          <h1
+            class="text-white relative before:content-['RESUME'] before:absolute before:top-[50%] before:left-[50%] before:translate-[-50%] before:text-[85px] lg:before:text-[150px] before:text-gray-200 before:opacity-[0.1] before:font-[600] font-[600] text-[45px] lg:text-[65px]"
+          >
+            ABOUT <span class="text-[#ffb400]">ME</span>
+          </h1>
+        </div>
+
+        <!-- Infos -->
+        <div
+          class="text-white mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[10px] justify-center items-center w-[100%] px-[10px] lg:px-[50px] pb-[100px]"
+        >
+          <!-- Left Infos -->
+          <div class="w-[100%] lg:w-[200%]">
+            <h1 class="font-[700] text-[30px] my-[15px]">PERSONAL INFOS</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+              <div class="list-none grid grid-cols-2 gap-5 w-[100%]">
+                <li class="text-gray-400">
+                  First Name: <br class="block lg:hidden" /><span
+                    class="font-[600] text-white"
+                    >Iredia</span
+                  >
+                </li>
+                <li class="text-gray-400">
+                  Last Name: <br class="block lg:hidden" /><span
+                    class="font-[600] text-white"
+                    >Erhabor</span
+                  >
+                </li>
+                <li class="text-gray-400">
+                  Age: <br class="block lg:hidden" /><span
+                    class="font-[600] text-white"
+                    >24</span
+                  >
+                </li>
+                <li class="text-gray-400 flex flex-col lg:flex-row gap-1">
+                  E-mail: <br class="block lg:hidden" />
+                  <p class="font-[600] text-white text-[11px] lg:text-[16px]">
+                    irediaerhabor75@gmail.com
+                  </p>
+                </li>
+                <li class="text-gray-400">
+                  Phone: <br class="block lg:hidden" /><span
+                    class="font-[600] text-white"
+                    >+234 906 835 1922</span
+                  >
+                </li>
+                <li class="text-gray-400">
+                  Nationality: <br class="block lg:hidden" /><span
+                    class="font-[600] text-white"
+                    >Nigeria</span
+                  >
+                </li>
+                <li class="text-gray-400">
+                  Freelance: <br class="block lg:hidden" /><span
+                    class="font-[600] text-green-600"
+                    >Available</span
+                  >
+                </li>
+
+                <li class="text-gray-400">
+                  Language: <br class="block lg:hidden" /><span
+                    class="font-[600] text-white"
+                    >English</span
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+          <!-- Right Infos -->
+          <div
+            class="w-[100%] lg:w-[100%] flex items-center justify-center flex-wrap gap-6"
+          >
+            <div
+              class="border-[1px] border-[#d7d7d71e] rounded-[15px] w-[95%] lg:w-[270px] pl-[50px] py-[15px] flex flex-col justify-center"
+            >
+              <h1 class="text-[#ffb400] text-[40px] font-[600]">
+                4<sup class="font-[400]">+</sup>
+              </h1>
+              <div class="flex gap-3">
+                <span>---</span>
+                <p class="w-[50%] font-[500]">YEARS OF EXPERIENCE</p>
+              </div>
+            </div>
+            <div
+              class="border-[1px] border-[#d7d7d71e] rounded-[15px] w-[95%] lg:w-[270px] pl-[50px] py-[15px] flex flex-col justify-center"
+            >
+              <h1 class="text-[#ffb400] text-[40px] font-[600]">
+                50<sup class="font-[400]">+</sup>
+              </h1>
+              <div class="flex gap-3">
+                <span>---</span>
+                <p class="w-[50%] font-[500]">COMPLETED PROJECTS</p>
+              </div>
+            </div>
+            <div
+              class="border-[1px] border-[#d7d7d71e] rounded-[15px] w-[95%] lg:w-[270px] pl-[50px] py-[15px] flex flex-col justify-center"
+            >
+              <h1 class="text-[#ffb400] text-[40px] font-[600]">
+                72<sup class="font-[400]">+</sup>
+              </h1>
+              <div class="flex gap-3">
+                <span>---</span>
+                <p class="w-[50%] font-[500]">HAPPY CUSTOMERS</p>
+              </div>
+            </div>
+            <div
+              class="border-[1px] border-[#d7d7d71e] rounded-[15px] w-[95%] lg:w-[270px] pl-[50px] py-[15px] flex flex-col justify-center"
+            >
+              <h1 class="text-[#ffb400] text-[40px] font-[600]">
+                1<sup class="font-[400]">+</sup>
+              </h1>
+              <div class="flex gap-3">
+                <span>---</span>
+                <p class="w-[50%] font-[500]">AWARD <br />WON</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section
+        id="skills"
+        class="h-[auto] flex flex-col items-center pb-[70px]"
+      >
+        <div class="mt-[70px]">
+          <h1
+            class="text-white relative before:content-['TALENT'] before:absolute before:top-[50%] before:left-[50%] before:translate-[-50%] before:text-[90px] lg:before:text-[150px] before:text-gray-200 before:opacity-[0.1] before:font-[600] font-[600] text-[45px] lg:text-[65px]"
+          >
+            MY <span class="text-[#ffb400]">SKILLS</span>
+          </h1>
+        </div>
+
+        <div class="mt-[70px] grid grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-28">
+          <div class="flex flex-col items-center justify-center">
+            <img src="images/html.png" alt="" class="h-[130px] lg:h-[200px]" />
+            <h2 class="text-white font-[600] text-[19px] lg:text-[30px]">
+              HTML
+            </h2>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="images/css.png" alt="" class="h-[130px] lg:h-[200px]" />
+            <h2 class="text-white font-[600] text-[19px] lg:text-[30px]">
+              CSS
+            </h2>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="images/js.png" alt="" class="h-[130px] lg:h-[200px]" />
+            <h2 class="text-white font-[600] text-[19px] lg:text-[30px]">
+              JavaScript
+            </h2>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="images/react.png" alt="" class="h-[130px] lg:h-[200px]" />
+            <h2 class="text-white font-[600] text-[19px] lg:text-[30px]">
+              REACT
+            </h2>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="images/tailwindcss.png"
+              alt=""
+              class="h-[130px] lg:h-[200px]"
+            />
+            <h2 class="text-white font-[600] text-[19px] lg:text-[30px]">
+              TAILWINDCSS
+            </h2>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              src="images/wordpress.png"
+              alt=""
+              class="h-[130px] lg:h-[200px]"
+            />
+            <h2 class="text-white font-[600] text-[19px] lg:text-[30px]">
+              WORDPRESS
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience & Education -->
+      <section
+        id="expo"
+        class="h-[auto] bg-black flex flex-col items-center pb-[70px] text-white"
+      >
+        <div class="mt-[70px]">
+          <h1
+            class="text-white relative before:content-['EXPERIENCE'] before:absolute before:top-[50%] before:left-[50%] before:translate-[-50%] before:text-[55px] lg:before:text-[150px] before:text-gray-200 before:opacity-[0.1] before:font-[600] font-[600] text-[35px] lg:text-[65px]"
+          >
+            MY <span class="text-[#ffb400]">JOURNEY</span>
+          </h1>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 px-[20px]">
+          <!-- Split -->
+          <div>
+            <!-- Experience -->
+            <div
+              class="border-l-[1px] border-gray-400 px-[40px] w-[95%] lg:w-[550px] relative mt-[70px]"
+            >
+              <div
+                class="flex items-center justify-center bg-[#ffb400] h-[30px] w-[30px] rounded-[50%] absolute top-0 left-[-15px]"
+              >
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h6
+                class="bg-[#80808062] flex items-center justify-center w-[120px] rounded-[30px] text-[14px] text-[#9f9e9e] font-[600] py-[5px] my-[10px]"
+              >
+                2023-PRESENT
+              </h6>
+              <h2 class="font-[600] text-[18px] mb-[5px]">
+                OPERATION MANAGER
+                <span class="text-[#9f9e9e]">- AT SKILLBOOSTAFRICA</span>
+              </h2>
+              <p>
+                Managed daily operations, optimized workflows, and aligned teams
+                with organizational goals
+              </p>
+              <h2 class="font-[600] text-[18px] mt-[5px]">
+                <span class="text-green-600">KEY ACHIEVEMENTS</span>
+                <span class="font-[400]"
+                  >-
+                  <li>
+                    Managed a team, increasing productivity and meeting
+                    deadlines consistently
+                  </li>
+                </span>
+              </h2>
+            </div>
+            <div
+              class="border-l-[1px] border-gray-400 px-[40px] w-[95%] lg:w-[550px] relative mt-[70px]"
+            >
+              <div
+                class="flex items-center justify-center bg-[#ffb400] h-[30px] w-[30px] rounded-[50%] absolute top-0 left-[-15px]"
+              >
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h6
+                class="bg-[#80808062] flex items-center justify-center w-[120px] rounded-[30px] text-[14px] text-[#9f9e9e] font-[600] py-[5px] my-[10px]"
+              >
+                2023-PRESENT
+              </h6>
+              <h2 class="font-[600] text-[18px] mb-[5px]">
+                WEB DEVELOPMENT TUTOR
+                <span class="text-[#9f9e9e]">- AT SKILLBOOSTAFRICA</span>
+              </h2>
+              <p>
+                Taught web development concepts and guided students in building
+                responsive, functional websites.
+              </p>
+              <h2 class="font-[600] text-[18px] mt-[5px]">
+                <span class="text-green-600">KEY ACHIEVEMENTS</span>
+                <span class="font-[400]"
+                  >-
+                  <li>Trained over 50 students in HTML, CSS & JavaScript</li>
+                  <li>
+                    Achieved a [92%] student pass rate or improved student
+                    project completion outcomes
+                  </li>
+                </span>
+              </h2>
+            </div>
+            <div
+              class="border-l-[1px] border-gray-400 px-[40px] w-[95%] lg:w-[550px] relative mt-[70px]"
+            >
+              <div
+                class="flex items-center justify-center bg-[#ffb400] h-[30px] w-[30px] rounded-[50%] absolute top-0 left-[-15px]"
+              >
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h6
+                class="bg-[#80808062] flex items-center justify-center w-[120px] rounded-[30px] text-[14px] text-[#9f9e9e] font-[600] py-[5px] my-[10px]"
+              >
+                2021-PRESENT
+              </h6>
+              <h2 class="font-[600] text-[18px] mb-[5px]">
+                WEB DESIGNER
+                <span class="text-[#9f9e9e]">- AT SKILLBOOSTAFRICA</span>
+              </h2>
+              <p>
+                Designed and developed responsive WordPress websites tailored to
+                client needs, ensuring modern UI/UX and SEO optimization
+              </p>
+              <h2 class="font-[600] text-[18px] mt-[5px]">
+                <span class="text-green-600">KEY ACHIEVEMENTS</span>
+                <span class="font-[400]"
+                  >-
+                  <li>
+                    Built and launched over 10 WordPress websites for businesses
+                    and individuals
+                  </li>
+                  <li>
+                    Customized themes and plugins to match brand identity and
+                    functionality
+                  </li>
+                </span>
+              </h2>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="mt-[70px] lg:mt-[0]">
+            <h1 class="text-[30px] font-[600] block lg:hidden">EDUCATION</h1>
+            <div
+              class="border-l-[1px] border-gray-400 px-[40px] w-[95%] lg:w-[550px] relative mt-[0px] lg:mt-[70px]"
+            >
+              <div
+                class="flex items-center justify-center bg-[#ffb400] h-[30px] w-[30px] rounded-[50%] absolute top-0 left-[-15px]"
+              >
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h6
+                class="bg-[#80808062] flex items-center justify-center w-[120px] rounded-[30px] text-[14px] text-[#9f9e9e] font-[600] py-[5px] my-[10px]"
+              >
+                2021
+              </h6>
+              <h2 class="font-[600] text-[18px] mb-[5px]">
+                B.Sc in COMPUTER SCIENCE
+                <span class="text-[#9f9e9e]">- AMBROSE ALLI UNIVERSITY</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section
+        id="portfolio"
+        class="h-[auto] bg-black flex flex-col items-center pb-[70px] text-white"
+      >
+        <div class="mt-[70px]">
+          <h1
+            class="text-white text-center relative before:content-['PROJECTS'] before:absolute before:top-[50%] before:left-[50%] before:translate-[-50%] before:text-[60px] lg:before:text-[150px] before:text-gray-200 before:opacity-[0.1] before:font-[600] font-[600] text-[35px] lg:text-[65px]"
+          >
+            MY <span class="text-[#ffb400]">PORTFOLIO</span>
+          </h1>
+        </div>
+
+        <div class="flex flex-col items-center justify-center mt-[70px]">
+          <!-- Tab -->
+          <div class="flex items-center gap-5">
+            <button
+              id="btn"
+              data-tab="All"
+              class="btn active text-white text-[10px] lg:text-[15px] font-[600] py-[7px] w-[100px] lg:w-[150px] rounded-[5px] border-[1px] border-[#ffb400] overflow-hidden relative before:absolute before:top-0 before:right-0 before:content-[''] before:h-[100%] before:w-[0%] hover:before:w-[100%] before:transition-all before:duration-500 before:ease-in-out before:bg-[#ffb400] cursor-pointer"
+            >
+              <span class="relative z-50">ALL</span>
+            </button>
+            <button
+              id="btn"
+              data-tab="webdesign"
+              class="btn text-white text-[10px] lg:text-[15px] font-[600] py-[7px] w-[100px] lg:w-[150px] rounded-[5px] border-[1px] border-[#ffb400] overflow-hidden relative before:absolute before:top-0 before:right-0 before:content-[''] before:h-[100%] before:w-[0%] hover:before:w-[100%] before:transition-all before:duration-500 before:ease-in-out before:bg-[#ffb400] cursor-pointer"
+            >
+              <span class="relative z-50">WEB DESIGN</span>
+            </button>
+            <button
+              id="btn"
+              data-tab="webdev"
+              class="btn text-white text-[10px] lg:text-[15px] font-[600] py-[7px] w-[100px] lg:w-[150px] rounded-[5px] border-[1px] border-[#ffb400] overflow-hidden relative before:absolute before:top-0 before:right-0 before:content-[''] before:h-[100%] before:w-[0%] hover:before:w-[100%] before:transition-all before:duration-500 before:ease-in-out before:bg-[#ffb400] cursor-pointer"
+            >
+              <span class="relative z-50">FRONTEND DEV</span>
+            </button>
+          </div>
+
+          <!-- Works -->
+          <div
+            class="flex flex-col lg:flex-row flex-wrap items-center justify-center gap-6 my-[60px] px-[10px] lg:px-[50px]"
+          >
+            <div
+              id="webdesign"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/Eastkonsult.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">Eastkonsult</h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a href="https://eastkonsult.com" target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="webdesign"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/digitaltechnology.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">Digital Technology</h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a
+                    href="http://techtraining.irediaportfolio.kesug.com"
+                    target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="webdev"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/skillmatch.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">
+                  Landing Page - Skillmatch
+                </h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a href="https://skillmatch-zxmw.vercel.app" target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="webdesign"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/caringspiritgroup.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">Caringspiritgroup</h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a href="https://caringspiritgroup.com" target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="webdesign"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/Maggie's Homes.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">Mgdhomes</h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a href="https://mgdhomesllc.com" target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="webdev"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/form.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">Form Validation</h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a href="https://form-nine-gray.vercel.app" target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="webdev"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/ireskistore.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">Ireski Store</h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a href="https://ireski-store.vercel.app" target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="webdesign"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/spectralimited.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">Spectralimited</h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a href="https://spectralimited.com" target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="webdev"
+              class="h-[200px] w-[95%] lg:w-[350px] bg-red-400 overflow-hidden rounded-[5px] cursor-pointer relative box active"
+            >
+              <img
+                id="box-img"
+                src="images/personalshape.png"
+                alt=""
+                class="w-[100%] h-[100%] transition-all duration-500 ease-in-out"
+              />
+              <div
+                id="show-box"
+                class="text-[white] absolute top-0 right-0 left-[500px] h-[100%] w-[100%] z-50 flex flex-col items-center justify-center gap-4 bg-[#0000007e] transition-all duration-500 ease-in-out"
+              >
+                <h3 class="text-[20px] font-[600]">
+                  Landing Page - Personal Shape
+                </h3>
+                <div
+                  class="h-[40px] w-[40px] rounded-[50%] flex items-center justify-center hover:bg-[#ffb400]"
+                >
+                  <a href="https://personal-shape.vercel.app" target="_blank"
+                    ><i class="fa-solid fa-link text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="relative flex flex-col items-center justify-center px-[20px] lg:px-[100px] h-[auto] pt-[20px] overflow-hidden text-white pb-[50px]"
+      >
+        <div>
+          <h1
+            class="text-white text-center relative before:content-['CONTACT'] before:absolute before:top-[50%] before:left-[50%] before:translate-[-50%] before:text-[60px] lg:before:text-[150px] before:text-gray-200 before:opacity-[0.1] before:font-[600] font-[600] text-[35px] lg:text-[65px]"
+          >
+            GET IN <span class="text-[#ffb400]">TOUCH</span>
+          </h1>
+        </div>
+        <div id="black2"></div>
+        <div class="hidden lg:block" id="yellow2"></div>
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start justify-between relative gap-20 my-[100px] px-[20px]"
+        >
+          <div class="w-[100%] lg:w-[40%]">
+            <h1 class="text-[35px] font-[600] my-[10px]">Hi there,</h1>
+            <p class="text-[18px] my-[10px]">
+              Please do not hesitate to contact me. I'm always up for talking
+              about fresh endeavors, original concepts, or chances to contribute
+              to your goals.
+            </p>
+            <div class="flex items-start gap-3 my-[40px]">
+              <div
+                class="relative top-[5px] bg-[#ffb400] flex items-center justify-center h-[40px] w-[40px] rounded-[5px]"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="text-[18px] font-[600] text-[#9f9e9e]">Address</h3>
+                <p>Port Harcourt, Rivers State, Nigeria.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 my-[40px]">
+              <div
+                class="relative top-[5px] bg-[#ffb400] flex items-center justify-center h-[40px] w-[40px] rounded-[5px]"
+              >
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div>
+                <h3 class="text-[18px] font-[600] text-[#9f9e9e]">E-mail</h3>
+                <p>irediaerhabor75@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 my-[40px]">
+              <div
+                class="relative top-[5px] bg-[#ffb400] flex items-center justify-center h-[40px] w-[40px] rounded-[5px]"
+              >
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div>
+                <h3 class="text-[18px] font-[600] text-[#9f9e9e]">Phone</h3>
+                <p>+234 906 835 1922</p>
+              </div>
+            </div>
+            <!-- socials -->
+            <div class="flex gap-3">
+              <div
+                class="h-[35px] w-[35px] flex items-center justify-center rounded-[50%] bg-[#9f9e9e] hover:bg-[#ffb400] cursor-pointer transition-all duration-500 ease-in-out"
+              >
+                <a href="https://x.com/ireski757">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </div>
+              <div
+                class="h-[35px] w-[35px] flex items-center justify-center rounded-[50%] bg-[#9f9e9e] hover:bg-[#ffb400] cursor-pointer transition-all duration-500 ease-in-out"
+              >
+                <a href="https://www.linkedin.com/in/iredia-erhabor-28b810295/">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div
+                class="h-[35px] w-[35px] flex items-center justify-center rounded-[50%] bg-[#9f9e9e] hover:bg-[#ffb400] cursor-pointer transition-all duration-500 ease-in-out"
+              >
+                <a href="https://api.whatsapp.com/send/?phone=2349068351922">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+              <div
+                class="h-[35px] w-[35px] flex items-center justify-center rounded-[50%] bg-[#9f9e9e] hover:bg-[#ffb400] cursor-pointer transition-all duration-500 ease-in-out"
+              >
+                <a href="https://github.com/Ireski">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div
+            class="w-[100%] lg:w-[60%] mt-[10px] lg:mt-[0px] relative lg:top-[90px]"
+          >
+            <form
+              action="https://formspree.io/f/xyznpwoy"
+              method="POST"
+              onsubmit="omo()"
+            >
+              <div class="flex flex-wrap gap-x-3 gap-y-6">
+                <input
+                  name="fullname"
+                  id="name"
+                  class="w-[100%] lg:w-[44%] bg-[#80808062] px-[15px] py-[15px] rounded-[30px] text-white focus:border-[1px] focus:border-[#ffb400] outline-none"
+                  type="text"
+                  placeholder="Enter your name"
+                  required
+                />
+                <input
+                  name="email"
+                  id="email"
+                  class="w-[100%] lg:w-[44%] bg-[#80808062] px-[15px] py-[15px] rounded-[30px] text-white focus:border-[1px] focus:border-[#ffb400] outline-none"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <input
+                  name="subject"
+                  id="subject"
+                  class="w-[100%] lg:w-[90%] bg-[#80808062] px-[15px] py-[15px] rounded-[30px] text-white focus:border-[1px] focus:border-[#ffb400] outline-none"
+                  type="text"
+                  placeholder="Enter your subject"
+                  required
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  class="w-[100%] lg:w-[90%] bg-[#80808062] px-[15px] py-[15px] rounded-[10px] text-white focus:border-[1px] focus:border-[#ffb400] z-[500] outline-none resize-none"
+                  rows="8"
+                  placeholder="Type your message here..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                id="aboutbtn"
+                class="relative flex items-center gap-2 h-[50px] mt-[30px] border-[1px] border-[#ffb400] px-[15px] rounded-[30px] overflow-hidden cursor-pointer font-[600] left-[50%] translate-x-[-50%] lg:left-[0%] lg:translate-x-[0%]"
+              >
+                SEND MESSAGE
+                <div
+                  class="bg-[#ffb400] h-[100%] w-[50px] flex items-center justify-center rounded-[50%] relative left-[15px]"
+                >
+                  <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div
+                  id="btnback"
+                  class="absolute top-0 right-0 h-[100%] w-[0%] bg-[#ffb400] z-[-10] transition-all duration-700 ease-in-out"
+                ></div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
